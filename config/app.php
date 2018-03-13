@@ -154,11 +154,11 @@ return [
         /*
          * Application Service Providers...
          */
-        App\Providers\AppServiceProvider::class,
-        App\Providers\AuthServiceProvider::class,
-        // App\Providers\BroadcastServiceProvider::class,
-        App\Providers\EventServiceProvider::class,
-        App\Providers\RouteServiceProvider::class,
+        GoViba\Providers\AppServiceProvider::class,
+        GoViba\Providers\AuthServiceProvider::class,
+        // GoViba\Providers\BroadcastServiceProvider::class,
+        GoViba\Providers\EventServiceProvider::class,
+        GoViba\Providers\RouteServiceProvider::class,
 
     ],
 

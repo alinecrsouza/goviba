@@ -1,7 +1,7 @@
 {
-    "name": "laravel/laravel",
-    "description": "The Laravel Framework.",
-    "keywords": ["framework", "laravel"],
+    "name": "alinecrsouza/goviba",
+    "description": "REST website using laravel to manage Products",
+    "keywords": ["framework", "laravel", "rest", "goviba", "products"],
     "license": "MIT",
     "type": "project",
     "require": {
@@ -57,7 +57,7 @@
             "database/factories"
         ],
         "psr-4": {
-            "App\\": "app/"
+            "GoViba\\": "app/"
         }
     },
     "autoload-dev": {
