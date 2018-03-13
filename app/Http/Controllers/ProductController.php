@@ -10,7 +10,8 @@ class ProductController extends Controller
 {
     private $productModel;
 
-    public function __construct(Product $productModel) {
+    public function __construct(Product $productModel)
+    {
         $this->productModel = $productModel;
     }
 
@@ -32,7 +33,8 @@ class ProductController extends Controller
      */
     public function create()
     {
-        return view('admin.products.create');
+        $product = $this->productModel;
+        return view('admin.products.create', compact('product'));
     }
 
     /**

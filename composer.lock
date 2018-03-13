@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "28aa49e0b48cd8cf3978657c42dafc31",
+    "content-hash": "dea0d123c33c5bf73d67235978e4cc0c",
     "packages": [
         {
             "name": "aws/aws-sdk-php",
@@ -3089,21 +3089,20 @@
         },
         {
             "name": "league/flysystem-ziparchive",
-            "version": "1.0.3",
+            "version": "1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/flysystem-ziparchive.git",
-                "reference": "c6d7c7ea23a57ee802d533ab9eb9f19dd5c5fc45"
+                "reference": "ab2e804c6c121e30f8ccb0c996bf418c3c8ccab8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/flysystem-ziparchive/zipball/c6d7c7ea23a57ee802d533ab9eb9f19dd5c5fc45",
-                "reference": "c6d7c7ea23a57ee802d533ab9eb9f19dd5c5fc45",
+                "url": "https://api.github.com/repos/thephpleague/flysystem-ziparchive/zipball/ab2e804c6c121e30f8ccb0c996bf418c3c8ccab8",
+                "reference": "ab2e804c6c121e30f8ccb0c996bf418c3c8ccab8",
                 "shasum": ""
             },
             "require": {
-                "ext-zip": "*",
-                "league/flysystem": "~1.0",
+                "league/flysystem": "~1.0@alpha",
                 "php": ">=5.4.0"
             },
             "require-dev": {
@@ -3132,7 +3131,7 @@
                 }
             ],
             "description": "Flysystem adapter for ZipArchive's",
-            "time": "2016-12-20T08:36:16+00:00"
+            "time": "2015-04-21T12:14:28+00:00"
         },
         {
             "name": "microsoft/azure-storage",
