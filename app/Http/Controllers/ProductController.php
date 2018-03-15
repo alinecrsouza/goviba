@@ -62,7 +62,7 @@ class ProductController extends Controller
      */
     public function show($id)
     {
-        $product = $this->productModel->find($id);
+        $product = $this->productModel->findOrFail($id);
 
         return view('admin.products.show', compact('product'));
     }
@@ -75,7 +75,7 @@ class ProductController extends Controller
      */
     public function edit($id)
     {
-        $product = $this->productModel->find($id);
+        $product = $this->productModel->findOrFail($id);
 
         return view('admin.products.edit', compact('product'));
     }
@@ -89,7 +89,7 @@ class ProductController extends Controller
      */
     public function update(ProductRequest $request, $id)
     {
-        $this->productModel->find($id)->update($request->all());
+        $this->productModel->findOrFail($id)->update($request->all());
 
         return redirect()->route('admin.products.index');
     }
@@ -102,7 +102,7 @@ class ProductController extends Controller
      */
     public function destroy($id)
     {
-        $this->productModel->find($id)->delete();
+        $this->productModel->findOrFail($id)->delete();
 
         return redirect()->route('admin.products.index');
     }
