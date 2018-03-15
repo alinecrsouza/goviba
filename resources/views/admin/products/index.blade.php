@@ -1,8 +1,8 @@
-@extends('app') @section('content')
+@extends('app')
+
+@section('content')
 <div class="container">
     <h1>Products</h1>
-
-
     <a href="{{ route('admin.products.create')}}" class="btn btn-default">New product</a>
     <br><br>
     <table class="table">
