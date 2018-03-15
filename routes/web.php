@@ -15,4 +15,10 @@
     return view('welcome');
 });*/
 
-Route::resource('products', "ProductController");
+Route::pattern('id', '[0-9]+');
+
+Route::group(['prefix' => 'admin', 'as' => 'admin.'], function () {
+    Route::resource('products', 'ProductController', ['parameters' => [
+        'product' => 'id'
+    ]]);
+});

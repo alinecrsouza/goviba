@@ -1,11 +1,11 @@
 @extends('app')
 
 @section('content')
-<section class="cover text-center">
+<section class="text-center">
 
     <div class="container">
 
-        <form action="{{ route('products.update', ['id' => $product->id])}}" method="POST">
+        <form action="{{ route('admin.products.update', ['id' => $product->id])}}" method="POST">
             {{ csrf_field() }}
             {{ method_field('PUT') }}
 

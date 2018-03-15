@@ -5,7 +5,7 @@
 
     <div class="container">
 
-        <form action="{{ route('products.store') }}" method="POST">
+        <form action="{{ route('admin.products.store') }}" method="POST">
             {{ csrf_field() }}
 
             <div class="col-md-12">
